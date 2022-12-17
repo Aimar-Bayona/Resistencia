@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Color</th>
+            <th>Banda 1</th>
+            <th>Banda 2</th>
+            <th>Multiplicador</th>
+            <th>Tolerancia</th>
+        </tr>
+        <tr>
+            <td>Negro</td>
+            <td id="bd1">0</td>
+            <td id="bd11">0</td>
+            <td id="bd111">x1</td>
+            <td id="bd1111"></td>
+        </tr>
+        <tr>
+            <td>Café</td>
+            <td id="bd2">1</td>
+            <td id="bd22">1</td>
+            <td id="bd222">x10</td>
+            <td id="bd2222">1%</td>
+        </tr>
+        <tr>
+            <td>Rojo</td>
+            <td id="bd3">2</td>
+            <td id="bd33">2</td>
+            <td id="bd333">x100</td>
+            <td id="bd3333">2%</td>
+        </tr>
+        <tr>
+            <td>Naranja</td>
+            <td id="bd4">3</td>
+            <td id="bd44">3</td>
+            <td id="bd444">x1000</td>
+            <td id="bd4444"></td>
+        </tr>
+        <tr>
+            <td>Amarillo</td>
+            <td id="bd5">4</td>
+            <td id="bd55">4</td>
+            <td id="bd555">x10000</td>
+            <td id="bd5555"></td>
+        </tr>
+        <tr>
+            <td>Verde</td>
+            <td id="bd6">5</td>
+            <td id="bd66">5</td>
+            <td id="bd666">x100000</td>
+            <td id="bd6666">0,5%</td>
+        </tr>
+        <tr>
+            <td>Azul</td>
+            <td id="bd7">6</td>
+            <td id="bd77">6</td>
+            <td id="bd777">x1000000</td>
+            <td id="bd7777">0.25%</td>
+        </tr>
+        <tr>
+            <td>Morado</td>
+            <td id="bd8">7</td>
+            <td id="bd88">7</td>
+            <td id="bd888">x10000000</td>
+            <td id="bd8888">0,10%</td>
+        </tr>
+        <tr>
+            <td>Gris</td>
+            <td id="bd9">8</td>
+            <td id="bd99">8</td>
+            <td id="bd999">x100000000</td>
+            <td id="bd9999">0,05%</td>
+        </tr>
+        <tr>
+            <td>Blanco</td>
+            <td id="bd10">9</td>
+            <td id="bd100">9</td>
+            <td id="bd1000">x1000000000</td>
+            <td id="bd10000"></td>
+        </tr>
+        <tr>
+            <td>Dorado</td>
+            <td id="bd01"></td>
+            <td id="bd011"></td>
+            <td id="bd0111"></td>
+            <td id="bd01111">5%</td>
+        </tr>
+        <tr>
+            <td>Plata</td>
+            <td id="bd12"></td>
+            <td id="bd122"></td>
+            <td id="bd1222"></td>
+            <td id="bd12222">10%</td>
+        </tr>
+    </table>
+    <img src="https://www.facilelectro.es/Codigo%20de%20colores%20de%20resistencias_files/resistor_color_code.png" alt="resistencia">
+    <div class="banda1" id="progress"></div>
+    <div class="banda2" id="progress2"></div>
+    <div class="multiplicador"  id="progress3"></div>
+    <div class="tolerancia"  id="progress4"></div>
+    <button class="btnCalcular" id="bC">Calcular</button>
+    <div class="contenedor">
+        <table class="resultados">
+            <tr>
+                <th>Banda 1</th>
+                <th>Banda 2</th>
+                <th>Multiplicador</th>
+                <th>Tolerancia</th>
+                <th>Resultado</th>
+            </tr>
+            <tr>
+                <td id="result1"></td>
+                <td id="result2"></td>
+                <td id="result3"></td>
+                <td id="result4"></td>
+                <td id="result5"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="resistencia.js"></script>
+</body>
+</html>
